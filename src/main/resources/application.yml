@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: rest-api
+    profiles:
+      active : dev
+  data:
+    cassandra:
+      port:
+
+server:
+  port: 8888
+
+---
+
+
+spring:
+  application:
+    name: rest-api
+    profiles:
+      active: prod
+
+  server:
+  port: 8888
